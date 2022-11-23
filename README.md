@@ -9,7 +9,7 @@ nforne
 
 # This analysis is based on the Divvy case study “‘Sophisticated, Clear, and Polished’: Divvy and Data Visualization” written by Kevin Hartman (found here: <https://artscience.blog/home/divvy-dataviz-case-study>). The purpose of this script is to consolidate downloaded Divvy data into a single dataframe and then conduct simple analysis to help answer the key question: “In what ways do members and casual riders use Divvy bikes differently?”
 
-# ======================================
+# =====================================
 
 # Install required packages
 
@@ -19,7 +19,7 @@ nforne
 
 # ggplot for visualization
 
-# =======================================
+# ======================================
 
 ``` r
 install.packages("tidyverse")
@@ -42,11 +42,11 @@ getwd() # displays your working directory
 setwd("~/Project_Cyclistic") # sets your working directory to simplify calls to data ... make sure to use your OWN username instead of mine ;)
 ```
 
-# ================================
+# =========================
 
 # STEP 0: THINGS TO NOTE BEFORE …!
 
-# ================================
+# =========================
 
 # A description of all data sources used
 
@@ -93,11 +93,11 @@ divvy_tripdata_202209_df <- read.csv("202209-divvy-tripdata.csv")
 divvy_tripdata_202210_df <- read.csv("202210-divvy-tripdata.csv")
 ```
 
-# ====================================================
+# =========================
 
 # STEP 2: WRANGLE DATA AND COMBINE INTO A SINGLE FILE
 
-# ====================================================
+# =========================
 
 # Compare column names each of the files
 
@@ -164,11 +164,11 @@ write.csv(all_trips_df_v1, "./all_trips_df_v1.csv", row.names = FALSE)
 all_trips_df_v1 <- read.csv("./all_trips_df_v1.csv")
 ```
 
-# ======================================================
+# =========================
 
 # STEP 3: CLEAN UP AND ADD DATA TO PREPARE FOR ANALYSIS
 
-# ======================================================
+# =========================
 
 # Inspect the new table that has been created
 
@@ -252,11 +252,11 @@ is.numeric(all_trips_df_v1$ride_duration)
 all_trips_df_v2 <- all_trips_df_v1[!(all_trips_df_v1$start_station_name == "HQ QR" | all_trips_df_v1$ride_duration<0),]
 ```
 
-# =====================================
+# =========================
 
 # STEP 4: CONDUCT DESCRIPTIVE ANALYSIS
 
-# =====================================
+# =========================
 
 # Descriptive analysis on ride_duration (all figures in seconds)
 
@@ -426,9 +426,11 @@ all_trips_df_v2 %>%
        caption="Data from: Nov,2021 to Oct, 2022")
 ```
 
-\#================================================= \# STEP 5: EXPORT
+# =========================
+STEP 5: EXPORT
 SUMMARY FILE FOR FURTHER ANALYSIS
-\#================================================= \# Create a csv file
+# =========================
+Create a csv file
 that we will visualize in Excel, Tableau, or my presentation software \#
 For more info: <https://datatofish.com/export-dataframe-to-csv-in-r/> \#
 R Markdown will be a preferred choice
