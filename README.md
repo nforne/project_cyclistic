@@ -448,4 +448,5 @@ write.csv(all_trips_df_v2_lite, file = './avg_ride_duration.csv')
 ![image6](./Rplot6.png)
 
 
-# We’re done! Congratulations!
+# The presentation slides are here:
+[embed] https://github.com/nforne/project_cyclistic/blob/master/Project%20Cyclistic.pdf [/embed]
