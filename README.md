@@ -3,7 +3,7 @@ Project_Cyclistic
 nforne
 2022-11-23
 
-[embed]https://github.com/nforne/project_cyclistic/blob/master/Project%20Cyclistic.pdf[/embed]
+[embed] https://github.com/nforne/project_cyclistic/blob/master/Project%20Cyclistic.pdf [/embed]
 
 ### Divvy_Exercise_Full_Year_Analysis
 
