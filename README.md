@@ -436,12 +436,12 @@ all_trips_df_v2_lite <- aggregate(all_trips_df_v2$ride_duration ~ all_trips_df_v
 
 write.csv(all_trips_df_v2_lite, file = './avg_ride_duration.csv')
 ```
-![image1](./Rplot1.png)
-![image2](./Rplot2.png)
-![image3](./Rplot3.png)
-![image4](./Rplot4.png)
-![image5](./Rplot5.png)
-![image6](./Rplot6.png)
+[image1](./Rplot1.png)
+[image2](./Rplot2.png)
+[image3](./Rplot3.png)
+[image4](./Rplot4.png)
+[image5](./Rplot5.png)
+[image6](./Rplot6.png)
 
 
 # We’re done! Congratulations!
