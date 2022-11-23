@@ -187,7 +187,7 @@ summary(all_trips_df_v1)  # Statistical summary of data. Mainly for numerics
 
 # (2) We will want to add some additional columns of data – such as day, month, year – that provide additional opportunities to aggregate the data.
 
-# (3) We will want to add a calculated field for length of ride since the 2020Q1 data did not have the “tripduration” column. We will add “ride_length” to the entire dataframe for consistency.
+# (3) We will want to add a calculated field for ride_duration since the data did not have the “tripduration” column. We will add “ride_duration” to the entire dataframe for consistency.
 
 # (4) There are some rides where tripduration shows up as negative, including several hundred rides where Divvy took bikes out of circulation for Quality Control reasons. We will want to delete these rides.
 
